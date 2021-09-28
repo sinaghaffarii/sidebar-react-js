@@ -4,10 +4,10 @@ import { useGlobalContext } from '../../context'
 
 const Modal = () => {
 
-  const {isOpenModal , closeModal} = useGlobalContext()
+  const {isModalOpen , closeModal} = useGlobalContext()
 
   return (
-    <div className={`${isOpenModal ? ' modal-overlay show-modal' : ' modal-overlay '}`} >
+    <div className={`${isModalOpen ? ' modal-overlay show-modal' : ' modal-overlay '}`} >
     <div className="modal-container">
       <h3>تغیرات برنامه</h3>
       <button className="close-toggle" onClick={closeModal}>
